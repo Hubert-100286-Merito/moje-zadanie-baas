@@ -1,0 +1,6 @@
+import * as a from "@aws-amplify/backend";
+
+export const helloWorld = a.function({
+  name: "helloWorld",
+  entry: "./src/helloWorld.ts",
+});
