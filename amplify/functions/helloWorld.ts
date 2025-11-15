@@ -1,7 +1,6 @@
-// amplify/functions/helloWorld.ts
-import * as a from "@aws-amplify/backend";
+import { defineFunction } from "@aws-amplify/backend";
 
-export const helloWorld = a.function({
+export const helloWorld = defineFunction({
   name: "helloWorld",
-  entry: "./src/helloWorld.ts",
+  entry: "./src/helloWorld.ts", // ścieżka względem ROOT repo (obok amplify/)
 });
