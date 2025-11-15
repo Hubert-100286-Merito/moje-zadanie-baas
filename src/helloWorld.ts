@@ -1,6 +1,5 @@
-import type { APIGatewayProxyHandlerV2 } from "aws-lambda";
-
-export const handler: APIGatewayProxyHandlerV2 = async () => {
+// src/helloWorld.ts
+export const handler = async () => {
   return {
     statusCode: 200,
     headers: { "Content-Type": "application/json" },
